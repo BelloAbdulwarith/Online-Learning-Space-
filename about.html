@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Al-Husnā Online Learning Space</title>
+    <link href="index.html">
+   <link href="contact.html">
+    <style>
+  /* General Styles */
+  @import url('https://fonts.googleapis.com/css2?family=Playwrite+IE+Guides&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background: #036d6b;
+    color: white;
+    padding: 20px 0;
+}
+.header h1 {
+    margin: 0;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+.navbar li {
+    margin: 0 15px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* About Intro Section */
+.about-intro {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+.about-intro h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: white;
+    padding: 50px 0;
+}
+.mission, .vision {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.mission h3, .vision h3 {
+    color: #036d6b;
+}
+
+/* Team Section */
+.team {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.team-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.team-card h3 {
+    margin: 10px 0;
+    color: #036d6b;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+  </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>About Us</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-intro" id="about">
+        <div class="container">
+            <h2>Who We Are</h2>
+            <p>
+                At <strong>Al-Husnā Online Learning Space</strong>, we are committed to equipping Muslims with authentic Arabic and Islamic knowledge. Our mission is to make high-quality Islamic education accessible to all, regardless of location or background. 
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mission">
+                <h3>Our Mission</h3>
+                <p>
+                    To nurture a global community of learners grounded in the teachings of the Quran and Sunnah through flexible and interactive online learning.
+                </p>
+            </div>
+            <div class="vision">
+                <h3>Our Vision</h3>
+                <p>
+                    A world where every Muslim has access to authentic knowledge that strengthens their connection with Allah and empowers them to lead fulfilling lives.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2>Meet Our Instructors</h2>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card">
+                    <img src="instructor1.jpg" alt="Instructor 1">
+                    <h3>Imam Bello Abdulwarith</h3>
+                    <p>Expert in Arabic and Islamic Sciences</p>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="team-card">
+                    <img src="instructor2.jpg" alt="Instructor 2">
+                    <h3>Ustadh Idrees Abu Uthymeen</h3>
+                    <p>Quran Specialist</p>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="team-card">
+                    <img src="instructor3.jpg" alt="Instructor 3">
+                    <h3>Sheikh Habeeb Abdulfataah</h3>
+                    <p>Fiqh and Hadith Studies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Al-Husnā Online Learning Space. All rights reserved.</p>
+    </footer>
+
+    <script>
+  // Smooth Scroll for Navigation Links
+document.querySelectorAll('.navbar a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+  </script>
+</body>
+</html>
