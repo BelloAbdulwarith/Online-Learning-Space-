@@ -87,6 +87,20 @@ body {
 #chatButton:hover {
     background: #028b85;
 }
+.bounce-out-down {
+  animation: bounce-out-down 2s ease infinite;
+}
+@keyframes bounce-out-down {
+  0% { transform: translateY(0); }
+  20% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
 
 .social-links li a {
     text-decoration: none;
@@ -161,7 +175,7 @@ body {
     </section>
 
     <!-- Live Chat Button -->
-    <div class="live-chat">
+    <div class="live-chat bounce-out-down">
       <a href="https://wa.me/message/AOMNZVKEFXIJC1"> <button id="chatButton">Live Chat</button> </a>
     </div>
 
